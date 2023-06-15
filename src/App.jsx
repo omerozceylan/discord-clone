@@ -21,7 +21,7 @@ function App() {
     <>
     <div className="discord">
       <div className='groups'>
-        <GroupSymbol imgName='rockstasdr' obj={objs}></GroupSymbol>
+        <GroupSymbol imgName='rockstar' obj={objs}></GroupSymbol>
       </div>
       <div className="group">
         <div className="group-header">
@@ -59,11 +59,10 @@ function GroupSymbol({imgName, obj}) {
   obj.map((value)=> {
       if(value.name == imgName) {
         imgSource = value.img
-        console.log(imgSource)
       }
   })
   return(
-    <img src={imgSource} alt="" />
+    <img className='groups__group-logo' src={imgSource} alt="" />
   )
 }
 
