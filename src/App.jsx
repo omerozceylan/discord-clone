@@ -22,6 +22,9 @@ function App() {
     <div className="discord">
       <div className='groups'>
         <GroupSymbol imgName='rockstar' obj={objs}></GroupSymbol>
+        <GroupSymbol imgName='google' obj={objs}></GroupSymbol>
+        <GroupSymbol imgName='midjourney' obj={objs}></GroupSymbol>
+        <GroupSymbol imgName='rockstar' obj={objs}></GroupSymbol>
       </div>
       <div className="group">
         <div className="group-header">

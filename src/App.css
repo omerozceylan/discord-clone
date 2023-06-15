@@ -52,8 +52,10 @@ table {
 
 .groups {
   display: flex;
-  justify-content: center;
-  padding-top: 10px;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
   width: 56px;
   height: 100vh;
   background-color:#1E1F22 ;
@@ -87,8 +89,9 @@ table {
 
 .groups__group-logo {
   max-width:100%;
-  width:48px ;
-  height: 48px;
+  margin-top: 10px;
+  width:42px;
+  height: 42px;
   object-fit: cover;
   border-radius: 40px;
 }
