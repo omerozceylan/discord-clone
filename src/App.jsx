@@ -21,7 +21,7 @@ function App() {
     <>
     <div className="discord">
       <div className='groups'>
-      <i class="fa-solid fa-truck-front fa-spin-pulse"></i>
+      
         <GroupSymbol imgName='rockstar' obj={objs}></GroupSymbol>
         <GroupSymbol imgName='google' obj={objs}></GroupSymbol>
         <GroupSymbol imgName='midjourney' obj={objs}></GroupSymbol>
@@ -34,6 +34,12 @@ function App() {
         <div className="group-chats-section">
         
           <div className="group-chats-section__chats">
+
+              <Chat title={' i-did-it'}></Chat>
+              <Chat title={' general'}></Chat>
+              <Chat title={' setups'}></Chat>
+              <Chat title={' '}></Chat>
+              <Chat title={' i-did-it'}></Chat>
 
           </div>
           <div className="group-chats-section__user-section">
@@ -70,5 +76,15 @@ function GroupSymbol({imgName, obj}) {
   )
 }
 
+function Chat({title}){
+  return(
+    <div className='group-chats-section__chats__chat '>
+      <i className="fa-solid fa-hashtag"></i> &nbsp;{title}
+    </div>
+    
+  )
+
+
+}
 
 export default App
