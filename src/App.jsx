@@ -43,7 +43,7 @@ function App() {
 
           </div>
           <div className="group-chats-section__user-section">
-
+              <Profile></Profile>
           </div>
         </div>
         <div className="chat-section">
@@ -83,8 +83,19 @@ function Chat({title}){
     </div>
     
   )
+}
 
+function Profile() {
+  return (
+    <div className='status-zone'>
+      <div className="status-zone__profile-section">
+        
+      </div>
+      <div className="status-zone__setting-section">
 
+      </div>
+    </div>
+  )
 }
 
 export default App

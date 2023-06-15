@@ -25,6 +25,9 @@ body {
 }
 
 .group-chats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   height: 100vh;
   background-color:#292B2F ;
@@ -56,7 +59,14 @@ body {
   width:48px;
   height: 48px;
   object-fit: cover;
+  cursor: pointer;
   border-radius: 40px;
+  transition: 0.3s;
+
+}
+
+.groups__group-logo:hover {
+  border-radius:10px;
 }
 
 .group-chats-section__chats__chat {
@@ -76,4 +86,10 @@ body {
 .group-chats-section__chats__chat:hover {
   background-color: #ffffff16;
   border-radius: 5px
+}
+
+.status-zone {
+  width: 100%;
+  height: 56px;
+  background-color: #232428;
 }
