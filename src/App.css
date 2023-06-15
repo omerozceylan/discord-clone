@@ -1,6 +1,10 @@
 body {
   background-color: #313338;
 }
+* {
+  box-sizing: border-box;
+  
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,17 +51,33 @@ table {
 }
 
 .groups {
-  width: 72px;
+  width: 56px;
   height: 100vh;
   background-color:#1E1F22 ;
 }
 
 .group-chats-section {
-  width: 230px;
+  width: 220px;
   height: 100vh;
   background-color:#292B2F ;
 }
 
+.users-section {
+  width: 220px;
+  height: 100vh;
+  background-color: #292B2F;
+}
+
 .discord {
+  display: flex;
+  width: 100%;
+}
+
+.chat-section {
+  width: 100%;
+}
+
+.group {
+  width: 100%;
   display: flex;
 }
